@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+        <html>
+          <head>
+            <title></title>
+            <script src="jquery.js" lang="javascript"></script>
+            <style>
+              #lm {
+                position:absolute;
+              }
+            </style>
+          </head>
+          <body>
+            <br><br>
+            <button id="btn1">Animate 1</button>
+            <button id="btn2">Animate 2</button>
+            <br><hr>
+            <img id="lm" src="js.img" width="400px" >
+          </body>
+          <script>
+            $("document").ready(() => {
+              $("#btn1").click(function () {
+                $("#lm").animate({
+                  left:'150px',
+                  opacity:'0'
+                },2000);
+              });
+              $("#btn2").click(function () {
+                $("#lm").animate({
+                  left:'0px',
+                  opacity:'1'
+                },2000);
+              });
+            });
+          </script>
+        </html>

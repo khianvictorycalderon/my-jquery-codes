@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+          <head>
+            <title>JQuery Sample Event 2</title>
+            <script src="jquery.js" lang="javascript"></script>
+          </head>
+          <body>
+            <h1>Hover on pictures</h1>
+            <img id="ijm" width="300px" src="chess.img">
+            <hr>
+            <img id="ikm" width="300px" src="chess.img">
+          </body>
+          <script>
+            $("document").ready(function () {
+        
+              $("#ijm").mouseenter(() => {
+                $("#ijm").css("width", "700px");
+              });
+              $("#ijm").mouseleave(() => {
+                $("#ijm").css("width", "300px");
+              });
+        
+        
+              $("#ikm").hover(
+                function(){
+                  $("#ikm").css("width", "700px");
+                },
+                function(){
+                  $("#ikm").css("width", "300px");
+                });
+            });
+          </script>
+</html>

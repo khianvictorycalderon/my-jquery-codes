@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+         <head>
+           <title>JQuery selector</title>
+           <script src="jquery.js" lang="javascript"></script>
+           <script>
+             const func1 = () => {
+               $("#div1").css("background-color","orange");
+               $("#div2").css("background-color","blue");
+             }
+             const func2 = () => {
+               $(".para").css("font-style","italic");
+             }
+           </script>
+           <style>
+            #div1 {
+              padding: 1%;
+              background:red;
+            }
+            #div2 {
+              padding: 1%;
+              background:yellow;
+            }
+            button {
+              margin:1%;
+            }
+           </style>
+         </head>
+         <body>
+           <h1>JQuery Selectors</h1>
+           <div id="div1">
+             <p class="para">Paragraph 1</p>
+             <p class="para">Paragraph 2</p>
+           </div>
+           <div id="div2">
+             <p class="para">Paragraph 3</p>
+             <p class="para">Paragraph 4</p>
+           </div>
+           <br>
+           <button onclick="func1();">Change Background</button>
+           <br>
+           <button onclick="func2();">Change Font Style</button>
+           <br>
+           
+         </body>
+</html>

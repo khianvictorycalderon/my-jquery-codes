@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Sample Event</title>
+        <script src="jquery.js" lang="javascript"></script>
+    </head>
+    <body>
+           <img id="ijm" src="chess.img">
+           <button id="btn">Click</button>
+    </body>
+    <script>
+          $("#btn").dblclick(() => { // click or dbl click
+             $("#ijm").css('width','500px');
+          });
+        
+          $("document").ready(() => {
+            alert("Hello user");
+          });
+    </script>
+</html>

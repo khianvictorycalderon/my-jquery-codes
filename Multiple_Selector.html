@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+         <head>
+           <title></title>
+           <style>
+            #x {
+              background:gray;
+              padding:2%;
+            }
+           </style>
+           <script src="jquery.js" lang="javascript"></script>
+           <script>
+             function func1() {
+               $("#x li").css("background","red");
+             }
+             function func2() {
+               $("li:even").css("font-style","italic");
+             }
+           </script>
+         </head>
+         <body>
+           <div id="x">
+             <ul>
+               <li>item 1</li>
+               <li>item 2</li>
+               <li>item 3</li>
+               <li>item 4</li>
+               <li>item 5</li>
+               <li>item 6</li>
+               <li>item 7</li>
+               <li>item 8</li>
+               <li>item 9</li>
+               <li>item 10</li>
+             </ul>
+           </div>
+           <button onclick="func1();">Change background color</button>
+           <button onclick="func2();">Change font style</button>
+         </body>
+</html>

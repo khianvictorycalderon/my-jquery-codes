@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+          <head>
+            <title></title>
+            <script src="jquery.js" lang="javascript"></script>
+          </head>
+          <body>
+            <br><br>
+            <button id="btn1">Hide</button>
+            <button id="btn2">Show</button>
+            <button id="btn3">Toggle</button>
+            <br><br>
+            <button id="btn4">Fade In</button>
+            <button id="btn5">Fade Out</button>
+            <button id="btn6">Toggle Fade</button>
+            <br><br>
+            <button id="btn7">Slide Up</button>
+            <button id="btn8">Slide Down</button>
+            <button id="btn9">Slide Toggle</button>
+            <br><br>
+            <button id="btn10">Stop</button>
+            <br><hr>
+            <img id="lm" src="js.img" width="400px" >
+          </body>
+          <script>
+            $("document").ready(() => {
+              $("#btn1").click(function () {
+                $("#lm").hide(1000);
+              });
+              $("#btn2").click(function () {
+                $("#lm").show(1000);
+              });
+              $("#btn3").click(function () {
+                $("#lm").toggle(2000);
+              });
+        
+              $("#btn4").click(function () {
+                $("#lm").fadeIn(1000);
+              });
+              $("#btn5").click(function () {
+                $("#lm").fadeOut(1000);
+              });
+              $("#btn6").click(function () {
+                $("#lm").fadeToggle(2000);
+              });
+        
+              $("#btn7").click(function () {
+                $("#lm").slideUp(1000);
+              });
+              $("#btn8").click(function () {
+                $("#lm").slideDown(1000);
+              });
+              $("#btn9").click(function () {
+                $("#lm").slideToggle(2000);
+              });
+        
+              $("#btn10").click(function () {
+                $("#lm").stop();
+              });
+            });
+          </script>
+</html>
